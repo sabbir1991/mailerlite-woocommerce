@@ -1,0 +1,17 @@
+{
+    "name": "wc-mailerlite",
+    "description": "A simple and flexible integration for mailerlite with WooCommerce",
+    "keywords": ["wordpress", "plugin", "mailerlite", "subscriber", "mail-subscriber", "woocommerce"],
+    "homepage": "https://sabbir.pro",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Sabbir Ahmed",
+            "email": "sabbir.081070@gmail.com"
+        }
+    ],
+    "require": {
+        "mailerlite/mailerlite-api-v2-php-sdk": "^0.2.1"
+    }
+}
