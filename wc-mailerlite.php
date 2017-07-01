@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WooCommerce Mailerlite
+Plugin Name: Mailerlite - WooCommerce
 Plugin URI: http://sabbir.pro/
 Description: A simple and flexible integration for mailerlite with WooCommerce
 Version: 1.0.0
