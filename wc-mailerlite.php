@@ -124,6 +124,7 @@ class WC_Mailerlite {
         define( 'WC_MAILERLITE_VERSION', $this->version );
         define( 'WC_MAILERLITE_FILE', __FILE__ );
         define( 'WC_MAILERLITE_PATH', dirname( WC_MAILERLITE_FILE ) );
+        define( 'WC_MAILERLITE_INC_PATH', WC_MAILERLITE_PATH . '/includes' );
         define( 'WC_MAILERLITE_ASSETS', plugins_url( '/assets', WC_MAILERLITE_FILE ) );
     }
 
@@ -135,7 +136,11 @@ class WC_Mailerlite {
     * @return void
     **/
     private function includes() {
-        // require_once '';
+        // Vendor lib loaded fpr mailerlite api
+        require_once WC_MAILERLITE_PATH . '/vendor/autoload.php';
+
+        // Generic class loaded
+        require_once WC_MAILERLITE_INC_PATH . '/class-admin.php';
     }
 
     /**
@@ -174,6 +179,7 @@ class WC_Mailerlite {
     **/
     private function init_classes() {
         // Create instnace for all class
+        WC_Mailerlite_Admin::init();
     }
 
     /**
